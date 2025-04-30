@@ -1,0 +1,39 @@
+.preview-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.pdf-wrapper {
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.download-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 640px) {
+  .download-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

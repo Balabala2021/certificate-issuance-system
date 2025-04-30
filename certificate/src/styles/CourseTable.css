@@ -1,0 +1,67 @@
+.table-container {
+  margin-top: 20px;
+  width: 70%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.table-cell {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .courses-table {
+    font-size: 14px;
+  }
+
+  .table-cell {
+    padding: 10px;
+  }
+
+  .delete-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .courses-table thead {
+    display: none;
+  }
+
+  .courses-table tbody tr {
+    display: block;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+
+  .courses-table tbody tr td {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 8px 12px;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+
+  .courses-table tbody tr td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+}
